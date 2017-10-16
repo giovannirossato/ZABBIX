@@ -3,7 +3,7 @@
 
 #### ZBX-SWITCH-FC-BROCADE.xml
 
-Template LLD para monitoramento de Tráfego In/Out de Interfaces para Switches de Fibra Brocade(Em desenvolvimento).
+Template LLD para monitoramento de Tráfego In/Out de Interfaces para Switches de Fibra Brocade (Em desenvolvimento).
 
 #### Itens monitorados:<br>
 ##### 1 - Tráfego (In / Out / Interfaces Fibra e ETH);<br>
