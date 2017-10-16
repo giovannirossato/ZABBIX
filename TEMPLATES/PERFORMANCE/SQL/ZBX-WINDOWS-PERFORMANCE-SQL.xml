@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>3.2</version>
+    <date>2017-10-16T12:47:10Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>ZBX-WINDOWS-PERFORMANCE-SQL</template>
+            <name>ZBX-WINDOWS-PERFORMANCE-SQL</name>
+            <description/>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>SQL Performance</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>SQL Statistics - Cursor Requests/Sec</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\SQLServer:Cursor Manager by Type(_Total)\Cursor Requests/sec&quot;,300]</key>
+                    <delay>30</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>/sec</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This counter gives you information with respect to number of SQL cursor requests received by server. If you end up seeing 100 of cursor requests per sec then it’s a worrying factor. This means that the code needs to be rewritten to avoid as much cursor usage as possible to improve the overall performance.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>SQL Performance</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>SQL Statistics - Batch Requests/sec</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\SQLServer:SQL Statistics\Batch Requests/sec&quot;,300]</key>
+                    <delay>30</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>/sec</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This counter gives you information with respect to the number for TSQL command batches received per second.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>SQL Performance</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>SQL Statistics - SQL Compilations/sec</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\SQLServer:SQL Statistics\SQL Compilations/sec&quot;,300]</key>
+                    <delay>30</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>/sec</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This counter gives you information with respect to number of SQL Compilations happening per second.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>SQL Performance</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>SQL Statistics - SQL Re-Compilations/sec</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\SQLServer:SQL Statistics\SQL Re-Compilations/sec&quot;,300]</key>
+                    <delay>30</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>/sec</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This counter gives you information with respect to number of TSQL statement recompiles per second. This counter has the count of number of times statement recompile is triggered by the database engine. This counter value should be very low. Ideally SQL Statistics: SQL Re-Compilations/sec value should not be more than one percent of SQL Statistics: Batch Requests/sec.&#13;
+&#13;
+For example if your system has 1000 SQL Statistics: Batch Requests/sec then the value of SQL Statistics: SQL Re-Compilations/sec shouldn’t exceed 10 (&gt; 1%) after the SQL Server is stable and its up and running for more than 24 hours.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>SQL Performance</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+            </items>
+            <discovery_rules/>
+            <httptests/>
+            <macros/>
+            <templates/>
+            <screens/>
+        </template>
+    </templates>
+    <triggers>
+        <trigger>
+            <expression>{ZBX-WINDOWS-PERFORMANCE-SQL:perf_counter[&quot;\SQLServer:SQL Statistics\Batch Requests/sec&quot;,300].avg(600,0)}&gt;10000</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Process IO Data Operations/sec</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{ZBX-WINDOWS-PERFORMANCE-SQL:perf_counter[&quot;\SQLServer:SQL Statistics\Batch Requests/sec&quot;,300].avg(600,0)}&gt;10500</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Process IO Data Operations/sec</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url>http://blogs.technet.com/b/askcore/archive/2012/03/16/windows-performance-monitor-disk-counters-explained.aspx</url>
+            <status>1</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{ZBX-WINDOWS-PERFORMANCE-SQL:perf_counter[&quot;\SQLServer:Cursor Manager by Type(_Total)\Cursor Requests/sec&quot;,300].avg(600,0)}&gt;10000</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Process IO Other Operations/sec</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{ZBX-WINDOWS-PERFORMANCE-SQL:perf_counter[&quot;\SQLServer:Cursor Manager by Type(_Total)\Cursor Requests/sec&quot;,300].avg(600,0)}&gt;10500</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Process IO Other Operations/sec</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url>http://blogs.technet.com/b/askcore/archive/2012/03/16/windows-performance-monitor-disk-counters-explained.aspx</url>
+            <status>1</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{ZBX-WINDOWS-PERFORMANCE-SQL:perf_counter[&quot;\SQLServer:SQL Statistics\SQL Re-Compilations/sec&quot;,300].avg(600,0)}&gt;10000</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Process IO Read Operations/sec</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url>http://blogs.technet.com/b/askcore/archive/2012/03/16/windows-performance-monitor-disk-counters-explained.aspx</url>
+            <status>1</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{ZBX-WINDOWS-PERFORMANCE-SQL:perf_counter[&quot;\SQLServer:SQL Statistics\SQL Re-Compilations/sec&quot;,300].avg(600,0)}&gt;10500</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Process IO Read Operations/sec</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url>http://blogs.technet.com/b/askcore/archive/2012/03/16/windows-performance-monitor-disk-counters-explained.aspx</url>
+            <status>1</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{ZBX-WINDOWS-PERFORMANCE-SQL:perf_counter[&quot;\SQLServer:SQL Statistics\SQL Compilations/sec&quot;,300].avg(600,0)}&gt;10000</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Process IO Write Operations/sec</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url>http://blogs.technet.com/b/askcore/archive/2012/03/16/windows-performance-monitor-disk-counters-explained.aspx</url>
+            <status>1</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{ZBX-WINDOWS-PERFORMANCE-SQL:perf_counter[&quot;\SQLServer:SQL Statistics\SQL Compilations/sec&quot;,300].avg(600,0)}&gt;10500</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Process IO Write Operations/sec</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url>http://blogs.technet.com/b/askcore/archive/2012/03/16/windows-performance-monitor-disk-counters-explained.aspx</url>
+            <status>1</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+    </triggers>
+    <graphs>
+        <graph>
+            <name>SQL Statistics</name>
+            <width>900</width>
+            <height>200</height>
+            <yaxismin>0.0000</yaxismin>
+            <yaxismax>100.0000</yaxismax>
+            <show_work_period>1</show_work_period>
+            <show_triggers>1</show_triggers>
+            <type>0</type>
+            <show_legend>1</show_legend>
+            <show_3d>0</show_3d>
+            <percent_left>0.0000</percent_left>
+            <percent_right>0.0000</percent_right>
+            <ymin_type_1>0</ymin_type_1>
+            <ymax_type_1>0</ymax_type_1>
+            <ymin_item_1>0</ymin_item_1>
+            <ymax_item_1>0</ymax_item_1>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>FF3333</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>ZBX-WINDOWS-PERFORMANCE-SQL</host>
+                        <key>perf_counter[&quot;\SQLServer:SQL Statistics\Batch Requests/sec&quot;,300]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>00C800</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>ZBX-WINDOWS-PERFORMANCE-SQL</host>
+                        <key>perf_counter[&quot;\SQLServer:Cursor Manager by Type(_Total)\Cursor Requests/sec&quot;,300]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>0000C8</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>ZBX-WINDOWS-PERFORMANCE-SQL</host>
+                        <key>perf_counter[&quot;\SQLServer:SQL Statistics\SQL Re-Compilations/sec&quot;,300]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>C800C8</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>ZBX-WINDOWS-PERFORMANCE-SQL</host>
+                        <key>perf_counter[&quot;\SQLServer:SQL Statistics\SQL Compilations/sec&quot;,300]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+    </graphs>
+</zabbix_export>
