@@ -5,7 +5,7 @@
 
 Template LLD para monitoramento de Tráfego In/Out de Interfaces para Switches de Fibra Brocade (Em desenvolvimento).
 
-Atribuir senhas as macros:
+Atribuir usuário/senha as macros:
 
 {$USERV3} = Usuário do SNMPV3<br>
 {$PASSV3} = Senha do SNMPV3
