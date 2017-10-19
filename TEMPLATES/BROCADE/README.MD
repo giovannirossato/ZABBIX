@@ -7,7 +7,7 @@ Template LLD para monitoramento de Tráfego In/Out de Interfaces para Switches d
 
 Atribuir senhas as macros:
 
-{$USERV3} = Usuário do SNMPV3
+{$USERV3} = Usuário do SNMPV3<br>
 {$PASSV3} = Senha do SNMPV3
 
 #### Itens monitorados:<br>
