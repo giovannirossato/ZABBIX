@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.2</version>
-    <date>2017-10-16T12:46:17Z</date>
+    <date>2018-01-31T17:49:04Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -22,6 +22,9 @@
                     <name>Memory Statistics</name>
                 </application>
                 <application>
+                    <name>Network Statistics</name>
+                </application>
+                <application>
                     <name>Processor Statistics</name>
                 </application>
             </applications>
@@ -33,7 +36,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>perf_counter[&quot;\Memory\Page Reads/sec&quot;,300]</key>
-                    <delay>30</delay>
+                    <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -76,7 +79,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>perf_counter[&quot;\Memory\Page Writes/sec&quot;,300]</key>
-                    <delay>30</delay>
+                    <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -113,13 +116,185 @@
                     <logtimefmt/>
                 </item>
                 <item>
+                    <name>Network Statistics - Packets Outbound Discarded</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\Network Interface(vmxnet3 Ethernet Adapter)\Packets Outbound Discarded&quot;,300]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Shows the number of outbound packets to be discarded even though no errors had been detected to prevent transmission. One possible reason for discarding the a packet could be to free up buffer space.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Network Statistics</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Network Statistics - Packets Outbound Errors</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\Network Interface(vmxnet3 Ethernet Adapter)\Packets Outbound Errors&quot;,300]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Shows the number of outbound packets that could not be transmitted because of errors.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Network Statistics</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Network Statistics - Packets Received Discarded</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\Network Interface(vmxnet3 Ethernet Adapter)\Packets Received Discarded&quot;,300]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Shows the number of outbound packets to be discarded even though no errors had been detected to prevent transmission. One possible reason for discarding the a packet could be to free up buffer space.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Network Statistics</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Network Statistics - Packets Received Errors</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>perf_counter[&quot;\Network Interface(vmxnet3 Ethernet Adapter)\Packets Received Errors&quot;,300]</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Shows the number of inbound packets that contained errors preventing them from being deliverable to a higher-layer protocol.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Network Statistics</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
                     <name>Processor Statistics - Interrupts/sec</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>perf_counter[&quot;\Processor(_Total)\Interrupts/sec&quot;,300]</key>
-                    <delay>30</delay>
+                    <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -162,7 +337,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>perf_counter[&quot;\System\Processor Queue Length&quot;,300]</key>
-                    <delay>30</delay>
+                    <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -205,7 +380,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>perf_counter[&quot;\System\System Calls/sec&quot;,300]</key>
-                    <delay>30</delay>
+                    <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -340,6 +515,74 @@
                     <item>
                         <host>ZBX-WINDOWS-PERFORMANCE-SYSTEM</host>
                         <key>perf_counter[&quot;\Memory\Page Writes/sec&quot;,300]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Network Statistics</name>
+            <width>900</width>
+            <height>200</height>
+            <yaxismin>0.0000</yaxismin>
+            <yaxismax>100.0000</yaxismax>
+            <show_work_period>1</show_work_period>
+            <show_triggers>1</show_triggers>
+            <type>0</type>
+            <show_legend>1</show_legend>
+            <show_3d>0</show_3d>
+            <percent_left>0.0000</percent_left>
+            <percent_right>0.0000</percent_right>
+            <ymin_type_1>0</ymin_type_1>
+            <ymax_type_1>0</ymax_type_1>
+            <ymin_item_1>0</ymin_item_1>
+            <ymax_item_1>0</ymax_item_1>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>A54F10</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>7</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>ZBX-WINDOWS-PERFORMANCE-SYSTEM</host>
+                        <key>perf_counter[&quot;\Network Interface(vmxnet3 Ethernet Adapter)\Packets Outbound Discarded&quot;,300]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>FC6EA3</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>7</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>ZBX-WINDOWS-PERFORMANCE-SYSTEM</host>
+                        <key>perf_counter[&quot;\Network Interface(vmxnet3 Ethernet Adapter)\Packets Outbound Errors&quot;,300]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>6C59DC</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>7</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>ZBX-WINDOWS-PERFORMANCE-SYSTEM</host>
+                        <key>perf_counter[&quot;\Network Interface(vmxnet3 Ethernet Adapter)\Packets Received Discarded&quot;,300]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>AC8C14</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>7</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>ZBX-WINDOWS-PERFORMANCE-SYSTEM</host>
+                        <key>perf_counter[&quot;\Network Interface(vmxnet3 Ethernet Adapter)\Packets Received Errors&quot;,300]</key>
                     </item>
                 </graph_item>
             </graph_items>
